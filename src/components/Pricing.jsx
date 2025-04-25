@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { Check, X } from "lucide-react"
-import { InfiniteMovingCards } from "./ui/infinite-moving-cards"
+import { InfiniteMovingCards } from "./ui/Infinite-moving-cards"
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger)
