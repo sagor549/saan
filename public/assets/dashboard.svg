@@ -1,0 +1,186 @@
+<svg viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="600" fill="#1E1E2E" rx="8" />
+  
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="200" height="600" fill="#171723" />
+  
+  <!-- Sidebar Logo -->
+  <rect x="30" y="30" width="140" height="40" rx="4" fill="#3B82F6" />
+  <text x="55" y="55" fill="white" font-family="Arial" font-weight="bold" font-size="20">SAAN</text>
+  
+  <!-- Sidebar Menu Items -->
+  <g fill="#6B7280">
+    <rect x="30" y="100" width="140" height="36" rx="4" fill="#2563EB" opacity="0.2" />
+    <rect x="30" y="146" width="140" height="36" rx="4" fill="transparent" />
+    <rect x="30" y="192" width="140" height="36" rx="4" fill="transparent" />
+    <rect x="30" y="238" width="140" height="36" rx="4" fill="transparent" />
+    <rect x="30" y="284" width="140" height="36" rx="4" fill="transparent" />
+  </g>
+  
+  <!-- Sidebar Icons -->
+  <g fill="#A0AEC0">
+    <rect x="45" y="108" width="20" height="20" rx="4" fill="#60A5FA" />
+    <rect x="45" y="154" width="20" height="20" rx="4" fill="#94A3B8" />
+    <rect x="45" y="200" width="20" height="20" rx="4" fill="#94A3B8" />
+    <rect x="45" y="246" width="20" height="20" rx="4" fill="#94A3B8" />
+    <rect x="45" y="292" width="20" height="20" rx="4" fill="#94A3B8" />
+  </g>
+  
+  <!-- Menu Text -->
+  <g fill="#D1D5DB">
+    <text x="75" y="123" font-family="Arial" font-size="12">Dashboard</text>
+    <text x="75" y="169" font-family="Arial" font-size="12">Analytics</text>
+    <text x="75" y="215" font-family="Arial" font-size="12">Customers</text>
+    <text x="75" y="261" font-family="Arial" font-size="12">Projects</text>
+    <text x="75" y="307" font-family="Arial" font-size="12">Settings</text>
+  </g>
+  
+  <!-- Main Area -->
+  <g>
+    <!-- Top Navigation -->
+    <rect x="200" y="0" width="1000" height="60" fill="#171723" />
+    
+    <!-- Search Bar -->
+    <rect x="240" y="15" width="300" height="30" rx="4" fill="#2D2D3D" />
+    <circle cx="255" cy="30" r="6" fill="#94A3B8" />
+    <text x="270" y="35" font-family="Arial" font-size="12" fill="#94A3B8">Search...</text>
+    
+    <!-- User Profile -->
+    <circle cx="1140" cy="30" r="20" fill="#3B82F6" />
+    <text x="1140" y="35" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="14" fill="white">JP</text>
+    
+    <!-- Notification Icon -->
+    <circle cx="1080" cy="30" r="15" fill="#2D2D3D" />
+    <rect x="1075" y="25" width="10" height="10" rx="2" fill="#94A3B8" />
+    
+    <!-- Welcome Header -->
+    <text x="240" y="100" font-family="Arial" font-weight="bold" font-size="24" fill="white">Welcome back, John!</text>
+    <text x="240" y="125" font-family="Arial" font-size="14" fill="#94A3B8">Here's what's happening with your projects today.</text>
+    
+    <!-- Stats Cards -->
+    <g>
+      <!-- Card 1 -->
+      <rect x="240" y="150" width="220" height="100" rx="8" fill="#2D2D3D" />
+      <text x="260" y="180" font-family="Arial" font-size="12" fill="#94A3B8">Total Revenue</text>
+      <text x="260" y="210" font-family="Arial" font-weight="bold" font-size="24" fill="white">$24,568</text>
+      <text x="260" y="230" font-family="Arial" font-size="12" fill="#10B981">↑ 12% from last month</text>
+      
+      <!-- Card 2 -->
+      <rect x="480" y="150" width="220" height="100" rx="8" fill="#2D2D3D" />
+      <text x="500" y="180" font-family="Arial" font-size="12" fill="#94A3B8">Active Users</text>
+      <text x="500" y="210" font-family="Arial" font-weight="bold" font-size="24" fill="white">2,453</text>
+      <text x="500" y="230" font-family="Arial" font-size="12" fill="#10B981">↑ 8% from last month</text>
+      
+      <!-- Card 3 -->
+      <rect x="720" y="150" width="220" height="100" rx="8" fill="#2D2D3D" />
+      <text x="740" y="180" font-family="Arial" font-size="12" fill="#94A3B8">New Customers</text>
+      <text x="740" y="210" font-family="Arial" font-weight="bold" font-size="24" fill="white">356</text>
+      <text x="740" y="230" font-family="Arial" font-size="12" fill="#EF4444">↓ 3% from last month</text>
+      
+      <!-- Card 4 -->
+      <rect x="960" y="150" width="220" height="100" rx="8" fill="#2D2D3D" />
+      <text x="980" y="180" font-family="Arial" font-size="12" fill="#94A3B8">Total Projects</text>
+      <text x="980" y="210" font-family="Arial" font-weight="bold" font-size="24" fill="white">68</text>
+      <text x="980" y="230" font-family="Arial" font-size="12" fill="#10B981">↑ 4% from last month</text>
+    </g>
+    
+    <!-- Chart Area -->
+    <rect x="240" y="280" width="700" height="300" rx="8" fill="#2D2D3D" />
+    <text x="260" y="310" font-family="Arial" font-weight="bold" font-size="16" fill="white">Performance Analytics</text>
+    
+    <!-- Chart -->
+    <polyline 
+      points="260,500 320,420 380,480 440,350 500,400 560,320 620,370 680,330 740,420 800,380 860,400 920,330" 
+      fill="none" 
+      stroke="#3B82F6" 
+      stroke-width="3" 
+    />
+    
+    <!-- Chart Dots -->
+    <circle cx="260" cy="500" r="4" fill="#3B82F6" />
+    <circle cx="320" cy="420" r="4" fill="#3B82F6" />
+    <circle cx="380" cy="480" r="4" fill="#3B82F6" />
+    <circle cx="440" cy="350" r="4" fill="#3B82F6" />
+    <circle cx="500" cy="400" r="4" fill="#3B82F6" />
+    <circle cx="560" cy="320" r="4" fill="#3B82F6" />
+    <circle cx="620" cy="370" r="4" fill="#3B82F6" />
+    <circle cx="680" cy="330" r="4" fill="#3B82F6" />
+    <circle cx="740" cy="420" r="4" fill="#3B82F6" />
+    <circle cx="800" cy="380" r="4" fill="#3B82F6" />
+    <circle cx="860" cy="400" r="4" fill="#3B82F6" />
+    <circle cx="920" cy="330" r="4" fill="#3B82F6" />
+    
+    <!-- Chart Area Gradient -->
+    <linearGradient id="chartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0" />
+    </linearGradient>
+    <path 
+      d="M260,500 L320,420 L380,480 L440,350 L500,400 L560,320 L620,370 L680,330 L740,420 L800,380 L860,400 L920,330 L920,550 L260,550 Z" 
+      fill="url(#chartGradient)" 
+    />
+    
+    <!-- Chart X Axis -->
+    <line x1="260" y1="550" x2="920" y2="550" stroke="#4B5563" stroke-width="1" />
+    <text x="260" y="570" font-family="Arial" font-size="10" fill="#94A3B8">Jan</text>
+    <text x="320" y="570" font-family="Arial" font-size="10" fill="#94A3B8">Feb</text>
+    <text x="380" y="570" font-family="Arial" font-size="10" fill="#94A3B8">Mar</text>
+    <text x="440" y="570" font-family="Arial" font-size="10" fill="#94A3B8">Apr</text>
+    <text x="500" y="570" font-family="Arial" font-size="10" fill="#94A3B8">May</text>
+    <text x="560" y="570" font-family="Arial" font-size="10" fill="#94A3B8">Jun</text>
+    <text x="620" y="570" font-family="Arial" font-size="10" fill="#94A3B8">Jul</text>
+    <text x="680" y="570" font-family="Arial" font-size="10" fill="#94A3B8">Aug</text>
+    <text x="740" y="570" font-family="Arial" font-size="10" fill="#94A3B8">Sep</text>
+    <text x="800" y="570" font-family="Arial" font-size="10" fill="#94A3B8">Oct</text>
+    <text x="860" y="570" font-family="Arial" font-size="10" fill="#94A3B8">Nov</text>
+    <text x="920" y="570" font-family="Arial" font-size="10" fill="#94A3B8">Dec</text>
+    
+    <!-- Right-side widgets -->
+    <rect x="960" y="280" width="220" height="140" rx="8" fill="#2D2D3D" />
+    <text x="980" y="310" font-family="Arial" font-weight="bold" font-size="16" fill="white">Tasks Progress</text>
+    
+    <!-- Progress Bars -->
+    <rect x="980" y="330" width="180" height="10" rx="5" fill="#1F2937" />
+    <rect x="980" y="330" width="126" height="10" rx="5" fill="#3B82F6" />
+    <text x="980" y="355" font-family="Arial" font-size="12" fill="#94A3B8">Website Redesign</text>
+    <text x="1140" y="355" font-family="Arial" font-size="12" text-anchor="end" fill="white">70%</text>
+    
+    <rect x="980" y="370" width="180" height="10" rx="5" fill="#1F2937" />
+    <rect x="980" y="370" width="90" height="10" rx="5" fill="#3B82F6" />
+    <text x="980" y="395" font-family="Arial" font-size="12" fill="#94A3B8">Mobile App</text>
+    <text x="1140" y="395" font-family="Arial" font-size="12" text-anchor="end" fill="white">50%</text>
+    
+    <!-- Recent Activities -->
+    <rect x="960" y="440" width="220" height="140" rx="8" fill="#2D2D3D" />
+    <text x="980" y="470" font-family="Arial" font-weight="bold" font-size="16" fill="white">Recent Activities</text>
+    
+    <!-- Activity Items -->
+    <circle cx="995" cy="495" r="5" fill="#10B981" />
+    <line x1="995" y1="500" x2="995" y2="530" stroke="#2D3748" stroke-width="2" />
+    <text x="1010" y="495" font-family="Arial" font-size="12" fill="white">New user registered</text>
+    <text x="1010" y="515" font-family="Arial" font-size="10" fill="#94A3B8">5 minutes ago</text>
+    
+    <circle cx="995" cy="535" r="5" fill="#3B82F6" />
+    <line x1="995" y1="540" x2="995" y2="570" stroke="#2D3748" stroke-width="2" />
+    <text x="1010" y="535" font-family="Arial" font-size="12" fill="white">Meeting scheduled</text>
+    <text x="1010" y="555" font-family="Arial" font-size="10" fill="#94A3B8">1 hour ago</text>
+  </g>
+  
+  <!-- Reflections and Highlights -->
+  <rect x="240" y="150" width="220" height="5" rx="2.5" fill="white" opacity="0.1" />
+  <rect x="480" y="150" width="220" height="5" rx="2.5" fill="white" opacity="0.1" />
+  <rect x="720" y="150" width="220" height="5" rx="2.5" fill="white" opacity="0.1" />
+  <rect x="960" y="150" width="220" height="5" rx="2.5" fill="white" opacity="0.1" />
+  
+  <!-- Gradient Overlays -->
+  <rect x="0" y="0" width="1200" height="600" fill="url(#screenGlare)" opacity="0.05" />
+  
+  <defs>
+    <linearGradient id="screenGlare" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.1" />
+      <stop offset="50%" stop-color="white" stop-opacity="0" />
+      <stop offset="100%" stop-color="white" stop-opacity="0.05" />
+    </linearGradient>
+  </defs>
+</svg>
