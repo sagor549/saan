@@ -43,11 +43,11 @@ const Header = () => {
   return (
     <header
       ref={headerRef}
-      className={`fixed top-0 left-0 right-0 h-18 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-transparent backdrop-blur-md" : "bg-transparent"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled ? "bg-gray-900/80 backdrop-blur-md" : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-4 md:py-4">
         <div className="flex items-center justify-between">
           <div className="logo flex items-center">
             <svg width="30" height="30" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="mr-2">
@@ -70,7 +70,7 @@ const Header = () => {
                 </linearGradient>
               </defs>
             </svg>
-            <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-600">
+            <span className="text-xl md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-600">
               SAAN
             </span>
           </div>
@@ -118,36 +118,68 @@ const Header = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <button className="md:hidden text-white" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <button 
+            className="md:hidden flex items-center justify-center w-10 h-10 text-white rounded-md hover:bg-gray-800"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
         {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="md:hidden pt-4 pb-2">
-            <nav className="flex flex-col space-y-4">
-              {["Products", "Solutions", "Pricing", "Resources"].map((item) => (
-                <a
-                  key={item}
-                  href={`#${item.toLowerCase()}`}
-                  className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
+        <div 
+          className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+            isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+          }`}
+        >
+          <nav className="flex flex-col space-y-4 py-4">
+            {["Products", "Solutions", "Pricing", "Resources"].map((item) => (
+              <div key={item} className="relative">
+                <button 
+                  className="w-full flex items-center justify-between text-base font-medium text-gray-300 hover:text-white transition-colors py-2"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    // You could add dropdown functionality here
+                  }}
                 >
-                  {item}
-                </a>
-              ))}
-              <div className="pt-2 border-t border-gray-800 flex flex-col space-y-2">
-                <button className="self-start text-sm font-medium text-gray-300 hover:text-white transition-colors">
+                  <span>{item}</span>
+                  <ChevronDown size={16} />
+                </button>
+                {/* Mobile submenu - could be expanded with state management */}
+                <div className="pl-4 hidden">
+                  {[`${item} 1`, `${item} 2`, `${item} 3`].map((subItem) => (
+                    <a
+                      key={subItem}
+                      href="#"
+                      className="block py-2 text-sm text-gray-400 hover:text-white"
+                    >
+                      {subItem}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            ))}
+            <div className="pt-4 mt-2 border-t border-gray-800 flex flex-col space-y-4">
+              <div className="flex items-center justify-between">
+                <button className="text-base font-medium text-gray-300 hover:text-white transition-colors">
                   Sign In
                 </button>
-                <button className="self-start px-4 py-2 rounded-md bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-medium hover:opacity-90 transition-opacity">
-                  Get Started
-                </button>
+                <div className="flex space-x-2">
+                  <button className="p-2 rounded-full bg-gray-800 hover:bg-gray-700 transition-colors">
+                    <Search size={18} />
+                  </button>
+                  <button className="p-2 rounded-full bg-gray-800 hover:bg-gray-700 transition-colors relative">
+                    <Bell size={18} />
+                    <span className="absolute top-0 right-0 w-2 h-2 rounded-full bg-cyan-500"></span>
+                  </button>
+                </div>
               </div>
-            </nav>
-          </div>
-        )}
+              <button className="w-full py-3 rounded-md bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-medium hover:opacity-90 transition-opacity">
+                Get Started
+              </button>
+            </div>
+          </nav>
+        </div>
       </div>
     </header>
   )

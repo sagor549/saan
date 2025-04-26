@@ -35,7 +35,9 @@ function App() {
     <div ref={appRef} className="min-h-screen bg-gray-950 text-white">
       <div className="noise-bg"></div>
       <Header />
-      <Hero />
+    
+        <Hero/>
+      
       <Features />
       <Dashboard />
       <Testimonials />
